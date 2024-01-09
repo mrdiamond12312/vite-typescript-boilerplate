@@ -1,5 +1,20 @@
 # ViteJS TypeScript BoilerPlate
+## Packages:
+| Framework | Description |
+| --- | --- |
+| Material UI | Google basic Components |
+| redux-toolkit | Global state Management |
+| redux-persist | Persist in local storage if needed |
+| react-helmet | Help with SEO and head title |
+| react-router-dom | Help with Navigation |
+| react-google-recaptcha (v2 & v3) | Google ReCaptcha Implementatioon |
+| classNames | className state management, compatible with tailwind |
+| urlcat | conventional for API Path/URL replacement |
+| tailwind & less | tailwind and less with preprocessor config |
+| eslint | tracking code and convention |
+| husky & commitlint | linting towards git commit messages |
 
+## How to run:
 - Install Dependencies
 
 ```
@@ -7,15 +22,9 @@ cd <project-folder>
 npm install
 ```
 
-- Add Google ReCAPTCHA API site key v3
-
+- Enable Husky for commitlint
 ```
-Approach 1:
-cp .env.example .env.local
-{Manualy put your key in .env.local or}
-
-Approach 2:
-sed '2s/$/<YOUR_KEY>/' .env.example > .env.local
+npm run prepare
 ```
 
 - Run the Project
