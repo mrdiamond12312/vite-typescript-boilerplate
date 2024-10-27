@@ -1,7 +1,7 @@
-import { path } from "@/constants/path";
-import { Link, Outlet } from "react-router-dom";
+import React from 'react';
+import { Link, Outlet } from 'react-router-dom';
 
-import React from "react";
+import { path } from '@/constants/path';
 
 const NavBar: React.FC = () => {
   return (

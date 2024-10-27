@@ -23,7 +23,7 @@
     /* Paths Alias */
     "baseUrl": "./",
     "paths": {
-      "@/*": ["./src/*"],
+      "@/*": ["./src/*"]
     }
   },
   "include": [
@@ -43,6 +43,5 @@
     "mock/*"
   ],
   "exclude": ["node_modules", "build", "dist", "scripts", "webpack", "jest"],
-  "references": [{ "path": "./tsconfig.node.json" }],
-  
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

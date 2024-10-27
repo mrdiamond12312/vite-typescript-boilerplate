@@ -1,16 +1,13 @@
-import { PayloadAction, createSlice } from "@reduxjs/toolkit";
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 
-
-const initialState = {
-  
-};
+const initialState = {};
 
 export const boilerplateSlice = createSlice({
-  name: "counter",
+  name: 'counter',
   initialState,
   reducers: {
     someDispatch: (state, action: PayloadAction<any>) => {
-      console.log(state, action)
+      console.log(state, action);
     },
   },
 });

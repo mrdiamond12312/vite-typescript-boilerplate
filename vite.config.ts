@@ -1,7 +1,7 @@
-import { defineConfig } from "vite";
-import { fileURLToPath, URL } from "url";
-import react from "@vitejs/plugin-react-swc";
-import dotenv from "dotenv";
+import { defineConfig } from 'vite';
+import { fileURLToPath, URL } from 'url';
+import react from '@vitejs/plugin-react-swc';
+import dotenv from 'dotenv';
 
 dotenv.config();
 // https://vitejs.dev/config/
@@ -11,8 +11,8 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: "@",
-        replacement: fileURLToPath(new URL("./src", import.meta.url)),
+        find: '@',
+        replacement: fileURLToPath(new URL('./src', import.meta.url)),
       },
     ],
   },

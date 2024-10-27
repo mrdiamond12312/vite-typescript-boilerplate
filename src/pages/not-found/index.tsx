@@ -1,8 +1,8 @@
-import React from "react";
-import "@/global.less";
-import { path } from "@/constants/path";
-import { Button } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Button } from 'antd/lib';
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+import { path } from '@/constants/path';
 
 const NotFound: React.FC = () => {
   return (
@@ -11,15 +11,13 @@ const NotFound: React.FC = () => {
       <h1 className="font-sans  text-[200px] leading-[240px] font-extrabold mix-blend-difference">
         Oops!
       </h1>
-      <span className="text-6xl font-bold mix-blend-difference">
-        404 - PAGE NOT FOUND!
-      </span>
+      <span className="text-6xl font-bold mix-blend-difference">404 - PAGE NOT FOUND!</span>
       <span className="text-heading-5 mix-blend-difference">
         The page that you're looking for is not here, changed or removed!
       </span>
       <Link to={path.HOMEPAGE}>
         <Button
-          variant="contained"
+          type="primary"
           className="mix-blend-difference !bg-neutral-3 !text-neutral-10 !text-body-1-semibold !h-12"
         >
           Go to Homepage

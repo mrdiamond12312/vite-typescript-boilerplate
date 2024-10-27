@@ -1,11 +1,15 @@
-import { lazyRouteImport } from "@/utils/lazyRouteImport";
-import { createBrowserRouter } from "react-router-dom";
-import { path } from "@/constants/path";
+import { lazy } from 'react';
+import { createBrowserRouter } from 'react-router-dom';
+
+import { path } from '@/constants/path';
+import NavBar from '@/layouts/Navbar/index';
+
+const NotFound = lazy(() => import('@/pages/not-found'));
 
 export const router = createBrowserRouter([
   {
     path: path.HOMEPAGE,
-    lazy: () => lazyRouteImport("layouts/Navbar"),
+    element: <NavBar />,
     children: [
       // {
       //   path: path.HOMEPAGE,
@@ -19,11 +23,7 @@ export const router = createBrowserRouter([
   },
 
   {
-    path: "*",
-    lazy: () => lazyRouteImport("pages/NotFound"),
-  },
-  {
-    path: path.PAGE_NOT_FOUND,
-    lazy: () => lazyRouteImport("pages/NotFound"),
+    path: '*',
+    element: <NotFound />,
   },
 ]);
